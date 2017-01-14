@@ -7,7 +7,7 @@
 Like any open-source project, all we're really going for is making the world a better place without hurting anyone's feelings. But while we're at it, we might as well flip through the following things:
 
 * Solve common 'gotcha' moments that chase people off Swift;
-* Make things easier on Swift beginners softened by JavaScript's generosity;
+* Make things easier on Swift beginners tempered by JavaScript's generosity;
 * Make Tesla and Elon Musk regret all the bad things they've said about Apple.
 
 ## Our Team
