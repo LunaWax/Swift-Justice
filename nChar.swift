@@ -1,5 +1,5 @@
 //
-// Swift Justice: nChar function 1.0
+// Swift Justice: nChar function 1.0.1
 //
 // The ingenious nChar function is there for you when you need an easy way to get any string's substring based
 // on its index, as if you were dealing with an array (similar to how it works in JavaScript).
