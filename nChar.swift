@@ -26,8 +26,8 @@ func nChar (str: String, indx: Int) -> String {
     if str.isEmpty {
         print("nChar error: empty string submitted")
         return "nChar bad input"
-    } else if str.characters.count < indx {
-        print("nChar error: target index (\(indx)) exceeds the submitted string's total number of characters (\(str.characters.count))")
+    } else if str.characters.count-1 < indx {
+        print("nChar error: target index (\(indx)) exceeds the submitted string's final index (\(str.characters.count-1))")
         return "nChar bad input"
     } else {
         let zeroIndex = str.startIndex
