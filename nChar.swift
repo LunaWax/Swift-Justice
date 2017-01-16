@@ -1,9 +1,9 @@
 //
-// Swift Justice: nChar function 1.1.0
+// Swift Justice: nChar function 2.0 (Updated on Jan 15, 2017)
 //
 // The ingenious nChar function is there for you when you need an easy way to get any string's substring based
 // on its index, as if you were dealing with an array (similar to how it works in JavaScript).
-// 
+//
 // **User Manual** :
 //  1. Call the nChar function with two parameters:
 //      str: any string (or constant/variable with a String-type value) you like
@@ -22,26 +22,12 @@
 //          (more trumpets)
 //
 
-func nChar (str: String, indx: Int) -> String {
-    if str.isEmpty {
-        print("nChar error: empty string submitted")
-        return "nChar bad input"
+func nChar (str: String?, indx: Int?) -> String {
+    if let recStr = str, let targetIndex = indx, targetIndex <= recStr.characters.count-1, targetIndex >= 0, !recStr.isEmpty {
+        return "\(recStr[recStr.index(recStr.startIndex, offsetBy: targetIndex)])"
+    } else {
+        return "nChar failed: bad input"
     }
-    
-    if str.characters.count-1 < indx {
-        print("nChar error: target index (\(indx)) exceeds the '\(str)' string's final index (\(str.characters.count-1))")
-        return "nChar bad input"
-    }
-    
-    if indx < 0 {
-        print("nChar error: 'indx' must be a positive integer")
-        return "nChar bad input"
-    }
-    
-    let zeroIndex = str.startIndex
-    let targetChar = str[str.index(zeroIndex, offsetBy: indx)]
-    return "\(targetChar)"
-    
 }
 
 // Example of calling the nChar and using the produced result straight away:
