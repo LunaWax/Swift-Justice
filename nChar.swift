@@ -23,11 +23,11 @@
 //
 
 func nChar (str: String?, indx: Int?) -> String {
-    if let recStr = str, let targetIndex = indx, targetIndex <= recStr.characters.count-1, targetIndex >= 0, !recStr.isEmpty {
+    if let recStr = str, let targetIndex = indx, targetIndex <= recStr.characters.count - 1, targetIndex >= 0, !recStr.isEmpty {
         return "\(recStr[recStr.index(recStr.startIndex, offsetBy: targetIndex)])"
-    } else {
-        return "nChar failed: bad input"
     }
+    
+    return "nChar failed: bad input"
 }
 
 // Example of calling the nChar and using the produced result straight away:
